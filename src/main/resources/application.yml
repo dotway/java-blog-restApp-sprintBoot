@@ -1,0 +1,18 @@
+Server:
+    port: 9050
+spring:
+    datasource:
+        password: 123456789
+        url: jdbc:postgresql://localhost:5432/Fashion-Blog
+        username: postgres
+    jpa:
+        database: POSTGRESQL
+        generate-ddl: true
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                jdbc:
+                    lob:
+                        non_contextual_creation: true
+        show-sql: true
